@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fixed sizes: tap 40 / control 44 / input 56 / tab 64.
+   Radius: chip 4 / control 8 / card 12 / panel 16 / sheet 24
+   (rounded / rounded-lg / rounded-xl / rounded-2xl / rounded-3xl). */
+@layer components {
+  .fz-page {
+    @apply px-4;
+  }
+  .fz-input {
+    @apply h-14 rounded-2xl border border-fz-border bg-white px-4 text-base text-fz-ink;
+    font-family: 'HankenGrotesk-Regular';
+  }
+  .fz-input-area {
+    @apply min-h-24 rounded-2xl border border-fz-border bg-white px-4 py-3 text-base text-fz-ink;
+    font-family: 'HankenGrotesk-Regular';
+  }
+  .fz-btn {
+    @apply h-14 items-center justify-center rounded-[32px] bg-fz-plum;
+    font-family: 'HankenGrotesk-SemiBold';
+  }
+  .fz-btn-pink {
+    @apply h-14 items-center justify-center rounded-[32px] bg-fz-pink;
+    font-family: 'HankenGrotesk-SemiBold';
+  }
+  .fz-btn-outline {
+    @apply h-14 items-center justify-center rounded-[32px] border border-fz-plum/20 bg-transparent;
+    font-family: 'HankenGrotesk-SemiBold';
+  }
+  .fz-btn-soft {
+    @apply h-14 items-center justify-center rounded-[32px] bg-fz-soft;
+    font-family: 'HankenGrotesk-SemiBold';
+  }
+  .fz-icon-btn {
+    @apply h-10 w-10 items-center justify-center rounded-full border border-fz-ink/10 bg-white;
+  }
+  .fz-icon-btn-light {
+    @apply h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10;
+  }
+  .fz-segment {
+    @apply h-11 w-full max-w-[343px] self-center flex-row items-center rounded-2xl bg-fz-soft p-1;
+  }
+  .fz-segment-active {
+    @apply h-9 flex-1 items-center justify-center rounded-2xl bg-white;
+  }
+  .fz-segment-inactive {
+    @apply h-9 flex-1 items-center justify-center rounded-2xl bg-transparent;
+  }
+  .fz-segment-text {
+    @apply text-sm font-medium text-center text-fz-plum;
+    font-family: 'HankenGrotesk-Medium';
+  }
+  .fz-chip {
+    @apply rounded-[32px] px-3.5 py-1.5;
+    font-family: 'HankenGrotesk-Medium';
+  }
+  .fz-card {
+    @apply overflow-hidden rounded-3xl bg-white border border-fz-border/60;
+  }
+  .fz-feed-card {
+    @apply w-full max-w-[343px] h-[343px] self-center overflow-hidden rounded-3xl bg-white relative mb-4;
+  }
+  .fz-tag-pill {
+    @apply flex-row items-center gap-1.5 px-3 py-1.5 rounded-[32px] bg-white/20 border border-white/20;
+  }
+  .fz-story-self {
+    @apply w-[60px] h-[88px] items-center;
+  }
+  .fz-story-item {
+    @apply w-16 h-[90px] items-center;
+  }
+  .fz-story-ring {
+    @apply h-16 w-16 items-center justify-center rounded-full border-2 border-fz-pink;
+  }
+  .fz-story-avatar {
+    @apply h-14 w-14 items-center justify-center rounded-full overflow-hidden;
+  }
+  .fz-story-text {
+    @apply mt-1.5 text-sm text-center text-fz-ink;
+    font-family: 'HankenGrotesk-Regular';
+  }
+  .fz-match-card {
+    @apply w-20 h-[92px] rounded-2xl overflow-hidden relative;
+  }
+  .fz-message-sheet {
+    @apply flex-1 bg-white rounded-t-[32px] overflow-hidden;
+  }
+  .fz-sheet {
+    @apply rounded-t-3xl bg-white;
+  }
+  .fz-title {
+    @apply text-3xl font-bold text-fz-plum;
+    font-family: 'HankenGrotesk-Bold';
+  }
+  .fz-heading {
+    @apply text-xl text-fz-ink;
+    font-family: 'HankenGrotesk-SemiBold';
+  }
+  .fz-body {
+    @apply text-base text-fz-ink;
+    font-family: 'HankenGrotesk-Regular';
+  }
+  .fz-caption {
+    @apply text-sm text-fz-muted;
+    font-family: 'HankenGrotesk-Regular';
+  }
+  .fz-label {
+    @apply text-xs text-fz-muted;
+    font-family: 'HankenGrotesk-Medium';
+  }
+  .fz-handle {
+    @apply mb-3 h-1 w-12 self-center rounded-full bg-fz-border;
+  }
+}
